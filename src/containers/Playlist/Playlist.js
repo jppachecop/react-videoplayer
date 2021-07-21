@@ -1,12 +1,12 @@
 import React from 'react'
-import PlaylistHeader from '../PlaylistHeader'
-import PlaylistItems from '../PlaylistItems/PlaylistItems'
-import NightMode from '../NightMode'
+import { PlaylistHeader } from '../../components/PlaylistHeader/PlaylistHeader'
+import { PlaylistItems } from '../PlaylistItems/PlaylistItems'
+import { Nightmode } from '../../components/Nightmode/Nightmode'
 
-export const VideoPlayer = (props) => {
+export const Playlist = (props) => {
   return (
     <>
-      <NightMode />
+      <Nightmode />
       <PlaylistHeader />
       <PlaylistItems />
     </>

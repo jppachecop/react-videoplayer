@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledNightmode = styled.div`
-  font-family: "Hind", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   font-size: 1.6em;
-  color: ${props => props.theme.color};
+  color: ${(props) => props.theme.color};
   padding: 0;
   margin: 20px;
 
@@ -39,7 +39,7 @@ const StyledNightmode = styled.div`
 
   .slider:before {
     position: absolute;
-    content: "";
+    content: '';
     height: 16px;
     width: 16px;
     left: 4px;
@@ -71,6 +71,6 @@ const StyledNightmode = styled.div`
   .slider.round:before {
     border-radius: 50%;
   }
-`;
+`
 
-export default StyledNightmode;
+export default StyledNightmode

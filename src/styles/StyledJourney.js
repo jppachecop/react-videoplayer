@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledJourney = styled.div`
   background: #565656;
@@ -11,6 +11,6 @@ const StyledJourney = styled.div`
   flex-direction: row;
   align-items: center;
   border-radius: 5px;
-`;
+`
 
-export default StyledJourney;
+export default StyledJourney

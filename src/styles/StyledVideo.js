@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledVideo = styled.div`
   position: relative;
@@ -10,6 +10,6 @@ const StyledVideo = styled.div`
     width: 100%;
     display: block;
   }
-`;
+`
 
-export default StyledVideo;
+export default StyledVideo

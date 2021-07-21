@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledPlaylistHeader = styled.div`
   background: #696969;
-  font-family: "Hind", sans-serif;
+  font-family: 'Hind', sans-serif;
   font-weight: 800;
   font-size: 1.6em;
   color: #fff;
@@ -15,6 +15,6 @@ const StyledPlaylistHeader = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-`;
+`
 
-export default StyledPlaylistHeader;
+export default StyledPlaylistHeader

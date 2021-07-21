@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledPlaylist = styled.div`
   -webkit-box-flex: 1;
@@ -14,6 +14,6 @@ const StyledPlaylist = styled.div`
     width: 100%;
     display: block;
   }
-`;
+`
 
-export default StyledPlaylist;
+export default StyledPlaylist

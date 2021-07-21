@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledPlaylistItem = styled.div`
-  font-family: "Hind", sans-serif;
+  font-family: 'Hind', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: none;
-  border: ${props => (props.active ? "2px dotted #696969" : "none")};
+  border: ${(props) => (props.active ? '2px dotted #696969' : 'none')};
   font-size: 1.6em;
-  color: ${props => props.theme.color};
+  color: ${(props) => props.theme.color};
   min-height: 50px;
   padding: 10px 20px;
   margin: 0 0 10px 0;
@@ -17,13 +17,13 @@ const StyledPlaylistItem = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: ${props => (props.active ? "5px" : "0")};
+  border-radius: ${(props) => (props.active ? '5px' : '0')};
   cursor: pointer;
   position: relative;
 
   ::before {
-    display: ${props => (props.active || !props.played ? "none" : "block")};
-    content: "";
+    display: ${(props) => (props.active || !props.played ? 'none' : 'block')};
+    content: '';
     width: 10px;
     min-height: 10px;
     background: #409f4e;
@@ -44,7 +44,7 @@ const StyledPlaylistItem = styled.div`
   .wbn-player__video-name a {
     flex-grow: 10; /* default 0 */
     padding: 0 0 0 10px;
-    color: ${props => props.theme.color};
+    color: ${(props) => props.theme.color};
     text-align: left;
     text-decoration: none;
     display: block;
@@ -64,24 +64,24 @@ const StyledPlaylistItem = styled.div`
 
   .wbn-player__video-download {
     flex-grow: 1; /* default 0 */
-    color: ${props => (props.played ? "#fff" : props.theme.color)};
+    color: ${(props) => (props.played ? '#fff' : props.theme.color)};
     margin: 0 0 0 20px;
     max-width: 30px;
     padding: 0 20px;
     border-left: 2px solid #565656;
-    font-family: "fontello";
+    font-family: 'fontello';
     font-style: normal;
     font-weight: normal;
   }
 
   .wbn-player__video-download a {
-    color: ${props =>
-      props.played && !props.active ? "#fff" : props.theme.color};
+    color: ${(props) =>
+      props.played && !props.active ? '#fff' : props.theme.color};
   }
 
   .active {
     opacity: 0.1;
   }
-`;
+`
 
-export default StyledPlaylistItem;
+export default StyledPlaylistItem

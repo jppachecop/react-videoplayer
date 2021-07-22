@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const StyledPlaylistItem = styled.div`
+export const StyledPlaylistItem = styled.div`
   font-family: 'Hind', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -83,5 +83,3 @@ const StyledPlaylistItem = styled.div`
     opacity: 0.1;
   }
 `
-
-export default StyledPlaylistItem

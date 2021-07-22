@@ -1,12 +1,10 @@
 import styled from 'styled-components'
 
-const StyledVideoPlayer = styled.div`
-  background: ${(props) => props.theme.bgcolor}; /* #353535; */
+export const StyledVideoPlayer = styled.div`
+  background: ${(props) => props.theme.bgColor};
   border: ${(props) => props.theme.border};
   max-width: 1800px;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-direction: row;
   max-height: 863px;
@@ -17,5 +15,3 @@ const StyledVideoPlayer = styled.div`
     max-height: 10000px;
   }
 `
-
-export default StyledVideoPlayer

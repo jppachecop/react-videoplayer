@@ -86,7 +86,6 @@ export const VideoPlayer = ({ match, history, location }) => {
         (video) => video.id === state.activeVideo.id,
       )
       playedVideo.played = true
-      console.log(videosList)
 
       setState((prevState) => ({ ...prevState, videos: videosList }))
     }

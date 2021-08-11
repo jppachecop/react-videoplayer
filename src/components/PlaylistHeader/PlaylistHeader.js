@@ -7,7 +7,7 @@ export const PlaylistHeader = ({ active, total }) => (
   <StyledPlaylistHeader>
     <p>{active.title}</p>
     <StyledJourney>
-      {active.num} / {total}
+      {active.num}/{total}
     </StyledJourney>
   </StyledPlaylistHeader>
 )

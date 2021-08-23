@@ -20,7 +20,7 @@ const themeLight = {
   bgColorItem: '#fff',
   bgColorItemActive: '#80a7b1',
   bgColorPlayed: '#7d9979',
-  border: '1px solid #353535',
+  border: 'none',
   borderPlayed: 'none',
   color: '#353535',
 }
@@ -70,6 +70,7 @@ export const VideoPlayer = ({ match, history, location }) => {
   const nightModeCallback = () => {
     setState((prevState) => ({ ...prevState, nightMode: !prevState.nightMode }))
   }
+
   const endCallback = () => {
     const videoId = match.params.activeVideo
     const currentVideoIndex = state.videos.findIndex(
@@ -84,6 +85,7 @@ export const VideoPlayer = ({ match, history, location }) => {
       autoplay: false,
     })
   }
+
   const progressCallback = (e) => {
     if (e.playedSeconds > 10 && e.playedSeconds < 11) {
       const videosList = [...state.videos]
